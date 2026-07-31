@@ -23,7 +23,7 @@ export function Contact() {
     <section id="contact" className="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
       <SectionHeading
         eyebrow="Contact"
-        title="Let&rsquo;s Connect"
+        title="Let’s Connect"
         subtitle="Open to internships, collaborations and conversations about cyber security."
       />
       <div className="mt-14 grid gap-6 lg:grid-cols-[1.3fr_1fr]">
