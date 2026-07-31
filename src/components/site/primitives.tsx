@@ -27,7 +27,7 @@ export function Reveal({
   delay?: number;
   className?: string;
 }) {
-  const from = directions[variant] ?? directions.up;
+  const from = directions[variant] ?? directions["up"];
   const variants: Variants = {
     hidden: { opacity: 0, ...from },
     show: { opacity: 1, x: 0, y: 0, scale: 1, rotate: 0 },
