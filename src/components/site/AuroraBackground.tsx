@@ -1,18 +1,21 @@
 import { seeded } from "./primitives";
 
+/** Round so SSR and client style strings are byte-identical. */
+const r = (n: number) => Math.round(n * 100) / 100;
+
 const stars = Array.from({ length: 60 }, (_, i) => ({
-  left: seeded(i, 1) * 100,
-  top: seeded(i, 2) * 100,
-  size: 1.5 + seeded(i, 3) * 3,
-  delay: seeded(i, 4) * 6,
-  duration: 3 + seeded(i, 5) * 5,
+  left: r(seeded(i, 1) * 100),
+  top: r(seeded(i, 2) * 100),
+  size: r(1.5 + seeded(i, 3) * 3),
+  delay: r(seeded(i, 4) * 6),
+  duration: r(3 + seeded(i, 5) * 5),
 }));
 
 const bokeh = Array.from({ length: 10 }, (_, i) => ({
-  left: seeded(i, 11) * 100,
-  top: seeded(i, 12) * 100,
-  size: 90 + seeded(i, 13) * 220,
-  delay: seeded(i, 14) * 8,
+  left: r(seeded(i, 11) * 100),
+  top: r(seeded(i, 12) * 100),
+  size: r(90 + seeded(i, 13) * 220),
+  delay: r(seeded(i, 14) * 8),
 }));
 
 const orbitStars = [0, 72, 144, 216, 288];
