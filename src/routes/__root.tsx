@@ -77,20 +77,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sania — Cyber Security Portfolio" },
+      { title: "Lovable App" },
       {
         name: "description",
-        content: "Elegant portfolio of Sania, BCA student and cyber security enthusiast.",
+        content: "Sania's Digital Realm is a premium personal portfolio showcasing a BCA student and Cyber Security Enthusiast.",
       },
       { name: "author", content: "Sania" },
-      { property: "og:title", content: "Sania — Cyber Security Portfolio" },
+      { property: "og:title", content: "Lovable App" },
       {
         property: "og:description",
-        content: "Elegant portfolio of Sania, BCA student and cyber security enthusiast.",
+        content: "Sania's Digital Realm is a premium personal portfolio showcasing a BCA student and Cyber Security Enthusiast.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "twitter:description", content: "Sania's Digital Realm is a premium personal portfolio showcasing a BCA student and Cyber Security Enthusiast." },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
