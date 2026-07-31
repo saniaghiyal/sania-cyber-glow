@@ -62,7 +62,7 @@ export function Skills() {
                 aria-valuemax={100}
               >
                 <motion.div
-                  className="h-full rounded-full bg-[image:var(--gradient-luxe)]"
+                  className="h-full rounded-full bg-[linear-gradient(90deg,var(--olive),var(--gold))]"
                   initial={{ width: 0 }}
                   whileInView={{ width: `${s.level}%` }}
                   viewport={{ once: true }}
